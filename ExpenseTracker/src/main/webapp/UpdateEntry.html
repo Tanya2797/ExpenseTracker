@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+    body { background-color:PowderBlue;
+    
+    }
+    .first{
+    background-color:white;
+    }
+
+ </style>
+<body>
+<div class="first">
+<h3>Provide Updated Details</h3>
+</div>
+<form action="UpdateExpenseServlet" method="post">
+ID : <input type="text" name="id" required><br>
+Title : <input type="text" name="title" required><br>
+Amount : <input type="text" name="amount" required><br>
+Category : <input type="text" name="category" list="categories" required><br>
+<datalist id="categories">
+<option value="Fuel">
+<option value="Dining">
+<option value="Shopping">
+<option value="Subscriptions">
+<option value="Travel">
+</datalist>
+Date : <input type="date" name="date" required><br>
+Notes : <input type="text" name="notes"><br>
+<input type="submit">
+
+</form>
+</body>
+</html>

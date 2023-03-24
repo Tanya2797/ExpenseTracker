@@ -1,0 +1,11 @@
+indexes:
+
+  - kind: expense
+    properties:
+      - name: date
+        direction: asc
+     
+  - kind: userDetails
+    properties:
+      - name: email
+      - name: password
